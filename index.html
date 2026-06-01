@@ -879,7 +879,7 @@ function recalc(){
   const eRate=parseFloat(document.getElementById('sl-extra-rate')?.value||7);
   const age=gv('cur-age')||30;
 
-  const totalInv=retCon+totalMatch+cIdx+cCry+cExt;
+  const totalInv=retCon+cIdx+cCry+cExt; // match excluded from budget — it's not your money out
   const totalBudget=totalExp+totalSpd+conSav+totalInv;
   const netWorth=retBal+bIdx+bCry+balSav+bOth-bDebt;
 
